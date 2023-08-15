@@ -52,4 +52,515 @@ test:
 Path
 {sentiment}
 NEUTRAL
+
+
+DEPLOY AS dev:
+https://hv4nghkdgg.execute-api.us-east-1.amazonaws.com/dev
 ---------------------------------------------------------------------------------------------------------------------------
+https://hv4nghkdgg.execute-api.us-east-1.amazonaws.com/dev/newsreader/NEUTRAL
+
+
+
+{
+"Count": 19,
+"Items": [
+{
+"SentimentScore": {
+"N": "0.000060628852224908769130706787109375"
+},
+"Neutral": {
+"N": "0.877417623996734619140625"
+},
+"Negative": {
+"N": "0.10733692348003387451171875"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T01:32:00Z"
+},
+"source": {
+"S": "The Hindu"
+},
+"Positive": {
+"N": "0.015184819698333740234375"
+},
+"title": {
+"S": "North Korea's Kim Jong Un orders sharp increase in missile production, days before U.S.-South Korea drills - The Hindu"
+}
+},
+{
+"SentimentScore": {
+"N": "0.00001551767854834906756877899169921875"
+},
+"Neutral": {
+"N": "0.6186807155609130859375"
+},
+"Negative": {
+"N": "0.379356801509857177734375"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T01:33:51Z"
+},
+"source": {
+"S": "NDTV News"
+},
+"Positive": {
+"N": "0.00194703158922493457794189453125"
+},
+"title": {
+"S": "\"CCTVs Cannot Help In Stopping Ragging,\" Jadavpur University Students - NDTV"
+}
+},
+{
+"SentimentScore": {
+"N": "0.0000865875408635474741458892822265625"
+},
+"Neutral": {
+"N": "0.939201831817626953125"
+},
+"Negative": {
+"N": "0.001436782651580870151519775390625"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T01:43:05Z"
+},
+"source": {
+"S": "Livemint"
+},
+"Positive": {
+"N": "0.0592748187482357025146484375"
+},
+"title": {
+"S": "6 things that changed for market over the weekend: Gift Nifty, FII selling to global market cues for Sensex today | Mint - Mint"
+}
+},
+{
+"SentimentScore": {
+"N": "0.00013553930330090224742889404296875"
+},
+"Neutral": {
+"N": "0.860202133655548095703125"
+},
+"Negative": {
+"N": "0.13765156269073486328125"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T01:49:32Z"
+},
+"source": {
+"S": "Livemint"
+},
+"Positive": {
+"N": "0.0020107366144657135009765625"
+},
+"title": {
+"S": "Taiwan will not back down to authoritarian threats, Vice President William Lai during ‘stopover’ visit in US | Mint - Mint"
+}
+},
+{
+"SentimentScore": {
+"N": "0.000007911452485132031142711639404296875"
+},
+"Neutral": {
+"N": "0.997402608394622802734375"
+},
+"Negative": {
+"N": "0.0001604123972356319427490234375"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T01:52:00Z"
+},
+"source": {
+"S": "The Times of India"
+},
+"Positive": {
+"N": "0.00242898589931428432464599609375"
+},
+"title": {
+"S": "Stocks in news: ONGC, SpiceJet, Adani Ports, ITC, Divi's Labs, Vodafone Idea - The Economic Times"
+}
+},
+{
+"SentimentScore": {
+"N": "0.0017824894748628139495849609375"
+},
+"Neutral": {
+"N": "0.883388221263885498046875"
+},
+"Negative": {
+"N": "0.10832099616527557373046875"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T01:56:15Z"
+},
+"source": {
+"S": "Livemint"
+},
+"Positive": {
+"N": "0.0065082688815891742706298828125"
+},
+"title": {
+"S": "Niger regime pledges to bring Bazoum to trial for 'high treason' | Mint - Mint"
+}
+},
+{
+"SentimentScore": {
+"N": "0.00000600540852246922440826892852783203125"
+},
+"Neutral": {
+"N": "0.99122297763824462890625"
+},
+"Negative": {
+"N": "0.0075522442348301410675048828125"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T01:59:59Z"
+},
+"source": {
+"S": "The Indian Express"
+},
+"Positive": {
+"N": "0.00121877505443990230560302734375"
+},
+"title": {
+"S": "Today in Politics: Partition Horrors Remembrance Day and what is happening in Maha Vikas Aghadi? - The Indian Express"
+}
+},
+{
+"SentimentScore": {
+"N": "0.0000135105501612997613847255706787109375"
+},
+"Neutral": {
+"N": "0.903847217559814453125"
+},
+"Negative": {
+"N": "0.00046002768795005977153778076171875"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T02:09:00Z"
+},
+"source": {
+"S": "The Indian Express"
+},
+"Positive": {
+"N": "0.095679275691509246826171875"
+},
+"title": {
+"S": "India vs West Indies, 5th T20 Highlights: King finishes off with a 6, WI clinch 1st T20I bilateral series win over IND since 2016 - The Indian Express"
+}
+},
+{
+"SentimentScore": {
+"N": "0.000018554288544692099094390869140625"
+},
+"Neutral": {
+"N": "0.9860432147979736328125"
+},
+"Negative": {
+"N": "0.00024472622317261993885040283203125"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T02:09:47Z"
+},
+"source": {
+"S": "Hindustan Times"
+},
+"Positive": {
+"N": "0.01369348354637622833251953125"
+},
+"title": {
+"S": "I-Day: 1800 people invited as special guests, selfie points installed in Delhi - Hindustan Times"
+}
+},
+{
+"SentimentScore": {
+"N": "0.00005360472641768865287303924560546875"
+},
+"Neutral": {
+"N": "0.814922034740447998046875"
+},
+"Negative": {
+"N": "0.184449136257171630859375"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T02:30:00Z"
+},
+"source": {
+"S": "The Hindu"
+},
+"Positive": {
+"N": "0.0005751742864958941936492919921875"
+},
+"title": {
+"S": "Second FIR filed against actor Upendra under Atrocities Act - The Hindu"
+}
+},
+{
+"SentimentScore": {
+"N": "0.0000135800682983244769275188446044921875"
+},
+"Neutral": {
+"N": "0.98421466350555419921875"
+},
+"Negative": {
+"N": "0.012236068956553936004638671875"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T02:36:00Z"
+},
+"source": {
+"S": "Uniindia.com"
+},
+"Positive": {
+"N": "0.00353564019314944744110107421875"
+},
+"title": {
+"S": "Russia's lunar mission Luna-25 transmits first scientific data to Earth - United News of India"
+}
+},
+{
+"SentimentScore": {
+"N": "0.000016115804100991226732730865478515625"
+},
+"Neutral": {
+"N": "0.9171731472015380859375"
+},
+"Negative": {
+"N": "0.00268950196914374828338623046875"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T02:41:22Z"
+},
+"source": {
+"S": "Hindustan Times"
+},
+"Positive": {
+"N": "0.080121286213397979736328125"
+},
+"title": {
+"S": "Apple developing ‘Watch X’ to commemorate its 10th anniversary, says Mark Gurman - HT Tech"
+}
+},
+{
+"SentimentScore": {
+"N": "0.000023594622689415700733661651611328125"
+},
+"Neutral": {
+"N": "0.994466602802276611328125"
+},
+"Negative": {
+"N": "0.000199642512598074972629547119140625"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T02:43:33Z"
+},
+"source": {
+"S": "Zee Business"
+},
+"Positive": {
+"N": "0.0053102262318134307861328125"
+},
+"title": {
+"S": "Tecno Pova 5 Pro with arc interface unveiled: Check features and specs - Zee Business"
+}
+},
+{
+"SentimentScore": {
+"N": "0.00003843990270979702472686767578125"
+},
+"Neutral": {
+"N": "0.7496712207794189453125"
+},
+"Negative": {
+"N": "0.24188680946826934814453125"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T02:50:00Z"
+},
+"source": {
+"S": "The Times of India"
+},
+"Positive": {
+"N": "0.0084035731852054595947265625"
+},
+"title": {
+"S": "IND vs WI 5th T20I: WATCH - Tilak Varma claims maiden international wicket and his victim is.... - IndiaTimes"
+}
+},
+{
+"SentimentScore": {
+"N": "0.00002843971014954149723052978515625"
+},
+"Neutral": {
+"N": "0.98007452487945556640625"
+},
+"Negative": {
+"N": "0.00011779324267990887165069580078125"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T03:11:09Z"
+},
+"source": {
+"S": "Hindustan Times"
+},
+"Positive": {
+"N": "0.01977927982807159423828125"
+},
+"title": {
+"S": "Valorant: Beginners tips and tricks to enhance gaming experience - HT Tech"
+}
+},
+{
+"SentimentScore": {
+"N": "0.0000134768097268533892929553985595703125"
+},
+"Neutral": {
+"N": "0.9885158538818359375"
+},
+"Negative": {
+"N": "0.001055340282618999481201171875"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T03:15:17Z"
+},
+"source": {
+"S": "Hindustan Times"
+},
+"Positive": {
+"N": "0.010415398515760898590087890625"
+},
+"title": {
+"S": "Gadar 2 box office: Sunny Deol film earns ₹135 crore in just 3 days - Hindustan Times"
+}
+},
+{
+"SentimentScore": {
+"N": "0.00000559265390620566904544830322265625"
+},
+"Neutral": {
+"N": "0.97912609577178955078125"
+},
+"Negative": {
+"N": "0.0072352862916886806488037109375"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T03:30:01Z"
+},
+"source": {
+"S": "India Today"
+},
+"Positive": {
+"N": "0.01363303326070308685302734375"
+},
+"title": {
+"S": "Chandrayaan-3: All eyes on Indian spacecraft as Isro drives it closer to Moon today - India Today"
+}
+},
+{
+"SentimentScore": {
+"N": "0.00000412867348131840117275714874267578125"
+},
+"Neutral": {
+"N": "0.9865858554840087890625"
+},
+"Negative": {
+"N": "0.0035080560483038425445556640625"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T03:57:23Z"
+},
+"source": {
+"S": "NDTV News"
+},
+"Positive": {
+"N": "0.00990193150937557220458984375"
+},
+"title": {
+"S": "\"If Priyanka Gandhi Contests From Varanasi...\": Sanjay Raut's Big Claim - NDTV"
+}
+},
+{
+"SentimentScore": {
+"N": "0.00013020503683947026729583740234375"
+},
+"Neutral": {
+"N": "0.605031788349151611328125"
+},
+"Negative": {
+"N": "0.02249332703649997711181640625"
+},
+"sentiment": {
+"S": "NEUTRAL"
+},
+"timestamp": {
+"S": "2023-08-14T04:14:31Z"
+},
+"source": {
+"S": "Hindustan Times"
+},
+"Positive": {
+"N": "0.372344672679901123046875"
+},
+"title": {
+"S": "Hottest Planet in the solar system: Mercury closest to Sun, but shockingly, Venus beats it - HT Tech"
+}
+}
+],
+"ScannedCount": 19
+}
+
+
+
