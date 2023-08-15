@@ -1,0 +1,55 @@
+api gw ----------GET--------> dynamodb
+
+dynamodb item:
+
+sentiment (string)(pratition key)
+timestamp (string) (sort key)
+
+
+rest api----> resource ---> /  ---> create resource newsreader ----> create child resourece under newsreader----->
+
+sentiment
+{sentiment}
+
+
+-----> create method--->GET----> 
+
+integration req---->
+
+aws service
+
+us-east-1
+dynamodb
+
+http method: POST
+action: Query
+Execution role
+arn:aws:iam::291222035571:role/apigw-role1 
+Credentials cache
+Do not add caller credentials to cache key 
+Content Handling
+Passthrough  
+Use Default Timeout
+
+
+ mapping template:
+
+ application/json
+
+ {
+  "TableName": "news",
+  "KeyConditionExpression": "sentiment = :v1",
+  "ExpressionAttributeValues": {
+      ":v1": {
+          "S": "$input.params('sentiment')"
+      }
+  }
+}
+
+
+test:
+
+Path
+{sentiment}
+NEUTRAL
+---------------------------------------------------------------------------------------------------------------------------
