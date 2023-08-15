@@ -72,10 +72,91 @@ def putdynamodb(Sentiment,Timestamp,Title,Source,SentimentScore,Negative,Neutral
         'Positive': Positive
         }
         )
-  -------------------------------------------------------------------------------------------------------------------------------------------
+  ---------------------------------------------EVENTBRIDGE----------------------------------------------------------------------------------------------
+    SQS---------------->HAVE TWO queue
+
+queue1 (standard)    [standard/FIFO]       <--------------Standard Queue
+DLQ    (standard)                          <----------------Dead Letter Queue(If fails, U got in DLQ)
     
-    
-  
+Message Body: (sent)
+{
+    "source": "xxx",
+    "sentiment": "NEGATIVE"
+}
+
+sqs pattern:
+-----------
+{
+  "messageId": "2e1424d4-f796-459a-8184-9c92662be6da",
+  "receiptHandle": "AQEBzWwaftRI0KuVm4tP+/7q1rGgNqicHq...",
+  "body": {
+    "source": "xxx",
+    "sentiment": "NEUTRAL"
+  },
+  "attributes": {
+    "ApproximateReceiveCount": "1",
+    "SentTimestamp": "1545082650636",
+    "SenderId": "AIDAIENQZJOLO23YVJ4VO",
+    "ApproximateFirstReceiveTimestamp": "1545082650649"
+  },
+  "messageAttributes": {},
+  "md5OfBody": "e4e68fb7bd0e697a0ae8f1bb342846b3",
+  "eventSource": "aws:sqs",
+  "eventSourceARN": "arn:aws:sqs:us-east-2:123456789012:my-queue",
+  "awsRegion": "us-east-2"
+}
+
+Filter:
+-------------------------------------------
+{
+  "body": {
+    "source": [ {"prefix": "xxx"}]
+  }
+}
+------------------Enrichment--------------------------
+APIGW: (GET FROM Dynamodb)
+PathParameterValues: ["$.body.sentiment"]
+----------------------Target---------------------------
+sns:
+---------------------------------------------------------------------------------------------------------------------------------------
+{
+  "messageId": "2e1424d4-f796-459a-8184-9c92662be6da",
+  "receiptHandle": "AQEBzWwaftRI0KuVm4tP+/7q1rGgNqicHq...",
+  "body": {
+    "source": "Livemint",
+    "sentiment": "NEUTRAL"
+  },
+  "attributes": {
+    "ApproximateReceiveCount": "1",
+    "SentTimestamp": "1545082650636",
+    "SenderId": "AIDAIENQZJOLO23YVJ4VO",
+    "ApproximateFirstReceiveTimestamp": "1545082650649"
+  },
+  "messageAttributes": {},
+  "md5OfBody": "e4e68fb7bd0e697a0ae8f1bb342846b3",
+  "eventSource": "aws:sqs",
+  "eventSourceARN": "arn:aws:sqs:us-east-2:123456789012:my-queue",
+  "awsRegion": "us-east-2"
+}
+
+
+filter:
+{
+  "body": {
+    "source": [ {"prefix": "Livemint"} ]
+  }
+}
+
+apigw:
+
+"$.body.sentiment"
+
+test from sqs:
+{
+    "source": "Livemint",
+    "sentiment": "NEUTRAL"
+  }
+--------------------------------------------------------------------------------
                 
                 
 
